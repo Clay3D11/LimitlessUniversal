@@ -1,0 +1,9 @@
+{
+  "name": "universal-limitless-com",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Universal Limitless landing page",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
