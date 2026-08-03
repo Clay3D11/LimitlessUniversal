@@ -19,6 +19,14 @@ const money = new Intl.NumberFormat('en-US', {
   maximumFractionDigits: 0
 });
 
+const currentServicePrices = {
+  'data-foundation': 1800,
+  'commerce-launch': 3500,
+  'automation-engine': 2200,
+  'brand-content': 1500,
+  'data-command-center': 5500
+};
+
 let cart = readCart();
 let lastFocusedElement = null;
 let toastTimer;
@@ -26,7 +34,9 @@ let toastTimer;
 function readCart() {
   try {
     const saved = JSON.parse(localStorage.getItem('universal-limitless-cart'));
-    return Array.isArray(saved) ? saved : [];
+    return Array.isArray(saved)
+      ? saved.map((item) => ({ ...item, price: currentServicePrices[item.id] ?? item.price }))
+      : [];
   } catch {
     return [];
   }
