@@ -155,7 +155,7 @@ p { color: var(--muted); }
 .icon-reels { color: white; background: linear-gradient(135deg, #fa517c, #7d4eff); }
 .icon-visual { color: white; background: linear-gradient(135deg, #7b76ff, #4bc7ff); }
 .icon-dev { color: white; background: var(--ink); }
-.icon-fit { color: var(--ink); background: #ffbd76; }
+.icon-fit { color: var(--ink); background: var(--lime); }
 .agency-type { color: #8b9097; font-size: .71rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
 .agency-card h3 { margin: 9px 0 13px; font-size: 1.8rem; }
 .agency-card p { flex-grow: 1; font-size: .91rem; }
