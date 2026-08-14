@@ -10,7 +10,7 @@ No dependencies are required.
 npm start
 ```
 
-Open `http://127.0.0.1:4173`.
+
 
 ## Current product features
 
